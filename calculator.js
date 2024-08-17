@@ -14,18 +14,49 @@ function divide(numOne, numTwo){
     let remainder=numOne/numTwo;
     return remainder;
 }
-let numOne=20;
-let numTwo=5;
+function operate(numOne, operator, numTwo){
+    switch (operator){
+        case '+' :
+            solution=add(numOne,numTwo)
+            break;
 
+        case '-':
+            solution=subtract(numOne, numTwo)
+            break;
 
+        case '*':
+            solution=multiply(numOne, numTwo)
+            break;
+
+        case '/':
+            solution= divide(numOne,numTwo)
+            break;
+
+        default:
+            console.log("Needs 2 numbers and an operator."+operator);    
+    }
+
+}
+
+let solution=null;
 function init(){
+    let numOne=20;
+    let numTwo=4;
+    let operator='/';
+    
+    
 
-//Benchtest
+
+
+
+    //Benchtest
 console.log(add(numOne,numTwo));
 console.log(subtract(numOne,numTwo));
 console.log(multiply(numOne,numTwo));
 console.log(divide(numOne,numTwo));
 
+operate(numOne,operator,numTwo);
+console.log(solution);
 //
 
 };

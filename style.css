@@ -1,0 +1,67 @@
+
+body{
+    background-color: rgb(154, 155, 158);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+h1{
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#contentArea{
+    display: flex;
+    flex-direction: column;
+}
+#frameContainer{
+    margin: 0;
+    width: 450px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(102, 97, 90);
+    border: 20px rgb(54, 51, 46)double;
+    border-radius: 5px;
+    
+    
+}
+#displayContainer{
+    width: 100%;
+    display: flex;
+    height: 20%;
+
+}
+#display{
+    width: 100%;
+    font-size: 30pt;
+    background-color: rgb(192, 201, 190);
+    border: 1pt solid rgb(36, 28, 6);
+    padding-top: 5%;
+    padding-right: 2%;
+    text-align: end;
+}
+
+#buttonContainer{
+    
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.buttons{
+    width: 25%;
+    font-size: 15pt;
+   
+}
+.operand{
+    font-size: 20pt;
+}
+#clear{
+ width: 50%;
+}
+#equals{
+    width: 50%;
+    font-size: 20pt;
+}

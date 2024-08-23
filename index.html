@@ -18,32 +18,32 @@
         <div id="frameContainer">
 
         <div id="displayContainer">
-            <div id="display"><p>DISPLAY HERE</p></div>
+            <div id="display"><p id="textInput"></p></div>
         </div>
         
         <div id="buttonContainer">
-            <input class="numbers buttons" value="7"  type="button">
-            <input class="numbers buttons" value="8"  type="button">
-            <input class="numbers buttons" value="9"  type="button">
-            <input class="operand buttons" value="+"  type="button">
+            <input class="numbers buttons" value="7"  type="button" onclick="inputNumber(7)">
+            <input class="numbers buttons" value="8"  type="button" onclick="inputNumber(8)">
+            <input class="numbers buttons" value="9"  type="button" onclick="inputNumber(9)">
+            <input class="operand buttons" value="+"  type="button" onclick="getOperator('+')">
 
-            <input class="numbers buttons" value="4"  type="button">
-            <input class="numbers buttons" value="5"  type="button">
-            <input class="numbers buttons" value="6"  type="button">
-            <input class="operand buttons" value="-"  type="button">
+            <input class="numbers buttons" value="4"  type="button" onclick="inputNumber(4)">
+            <input class="numbers buttons" value="5"  type="button" onclick="inputNumber(5)">
+            <input class="numbers buttons" value="6"  type="button" onclick="inputNumber(6)">
+            <input class="operand buttons" value="-"  type="button" onclick="getOperator('-')">
 
-            <input class="numbers buttons" value="1"  type="button">
-            <input class="numbers buttons" value="2"  type="button">
-            <input class="numbers buttons" value="3"  type="button">
-            <input class="operand buttons" value="*"  type="button">
+            <input class="numbers buttons" value="1"  type="button" onclick="inputNumber(1)">
+            <input class="numbers buttons" value="2"  type="button" onclick="inputNumber(2)">
+            <input class="numbers buttons" value="3"  type="button" onclick="inputNumber(3)">
+            <input class="operand buttons" value="x"  type="button" onclick="getOperator('x')">
 
-            <input class="numbers buttons" value="0"  type="button">
-            <input class="numbers buttons" value="."  type="button">
-            <input class="numbers buttons" value="00"  type="button">
-            <input class="operand buttons" value="/"  type="button">
+            <input class="numbers buttons" value="0"  type="button" onclick="inputNumber(0)">
+            <input id="decimal" class="buttons" value="."  type="button" onclick="inputNumber('.')">
+            <input class="numbers buttons" value="00"  type="button" onclick="inputNumber('00')">
+            <input class="operand buttons" value="/"  type="button" onclick="getOperator('/')">
 
-            <input id="clear" class="buttons" value="AC"  type="button">
-            <input id="equals" class="buttons"value="="  type="button">
+            <input id="clear" class="buttons" value="AC"  type="button" onclick="clearString()">
+            <input id="equals" class="buttons"value="="  type="button" onclick="equals()">
         </div>
     
 

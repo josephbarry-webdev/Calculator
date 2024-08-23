@@ -11,7 +11,14 @@ function multiply(numOne, numTwo){
     return product;
 }
 function divide(numOne, numTwo){
-    let remainder=numOne/numTwo;
+    let remainder;
+    if(numTwo===0){
+        alert("No division by zero silly");
+        remainder=0;
+    }
+    else{
+        remainder=numOne/numTwo;
+    }
     return remainder;
 }
 function operate(numOne, operator, numTwo){
@@ -49,13 +56,18 @@ function clearString(){
 function inputNumber(input){
    
    if(solution!=null){
+       if(opReg.test(displayString[displayString.length-1])){
+        displayString+=input;
+       }
+       else{
+        displayString=String(input);
+       }
     tempNumber=String(input);
-    //displayString=tempNumber;
     solution=null;
-    displayString+=input;
-   // tempNumber+=input;
+    
    }
    else{
+       
    displayString+=input;
    tempNumber+=input;
    }
@@ -91,7 +103,8 @@ function getOperator(symbol){
         operator=symbol;
         displayString+=symbol;
         tempNumber="";
-
+        //
+    
     }
     populateDisplay();
 }
@@ -139,7 +152,6 @@ let solution=-1;
 
 
 
-
 function init(){
     populateDisplay();
     displayString="";
@@ -167,11 +179,7 @@ console.log(numReg.test(realNum));
 console.log(opReg.test(symbol));
 console.log(numRegPlus.test(expression));
 
-*/
-/*
 Bugs to fix:
-
 Account for negative numbers
-
 */
 };
